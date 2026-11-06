@@ -1,0 +1,124 @@
+/* 조일고 스마트기술과 2026 개편: 기존 사이트 로직/미디어 파일 수정 없이 적용되는 추가 스타일 */
+:root{--refresh-green:#78e7d8;--refresh-line:rgba(130,221,219,.22);--refresh-panel:#0b2737;--refresh-ink:#eaf8ff}
+html{scroll-padding-top:96px}body{background:#061623}
+.section{position:relative;isolation:isolate}
+.section:before{pointer-events:none}
+.sticky-header{background:rgba(4,21,34,.93);box-shadow:0 8px 24px rgba(0,8,20,.16)}
+.nav-links a{transition:color .18s ease,background-color .18s ease}
+.nav-links a:hover,.nav-links a:focus-visible{color:#8cf6df;background:rgba(120,231,216,.08);border-radius:8px}
+.brand-mark{box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.hero{background:radial-gradient(ellipse at 85% 50%,rgba(28,118,115,.34),transparent 44%),linear-gradient(120deg,#061422 9%,#09283a 57%,#0b2534 100%);min-height:560px;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;opacity:.32;pointer-events:none;background-image:linear-gradient(rgba(149,227,223,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(149,227,223,.11) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,transparent 5%,black 78%);-webkit-mask-image:linear-gradient(90deg,transparent 5%,black 78%)}
+.hero:after{content:"";position:absolute;z-index:0;right:-160px;top:24px;width:540px;height:540px;border:1px solid rgba(117,232,217,.19);border-radius:50%;box-shadow:0 0 0 80px rgba(117,232,217,.025),0 0 0 165px rgba(117,232,217,.014);pointer-events:none}
+.hero .hero-content,.hero .hero-decor{position:relative;z-index:1}
+.hero .eyebrow{letter-spacing:1.8px;color:#98eddf;font-weight:850}
+.hero h1{line-height:1.32;letter-spacing:-.05em;text-wrap:balance}
+.hero h1 em{color:#82eddf;text-shadow:0 0 28px rgba(76,226,199,.13)}
+.hero .intro{color:#d0e4ed;max-width:650px;line-height:1.95}
+.hero .chip{border-color:rgba(160,231,231,.26);background:rgba(5,35,48,.75);color:#d4f0ee}
+.hero-actions .primary-button{box-shadow:0 14px 35px rgba(20,158,140,.17)}
+.hero-decor .decor-circle{filter:drop-shadow(0 20px 55px rgba(26,211,197,.09))}
+.about-section{background:radial-gradient(ellipse at 2% 0%,rgba(61,139,169,.17),transparent 43%),#0a1c2c}
+.strength-section{background:radial-gradient(ellipse at 100% 20%,rgba(47,126,133,.17),transparent 42%),linear-gradient(180deg,#091c2b,#0d2838)}
+.curriculum-section{background:linear-gradient(145deg,#061a2a,#0b2937)}
+.future-section{background:radial-gradient(ellipse at 12% 14%,rgba(13,105,115,.22),transparent 42%),#091a2b}
+.pathways-section{background:radial-gradient(ellipse at 99% 55%,rgba(40,116,139,.17),transparent 45%),#071c2b}
+.ppt-section{background:linear-gradient(160deg,#061626,#0b2836)}
+.videos-section{background:radial-gradient(ellipse at 2% 0%,rgba(64,153,148,.14),transparent 41%),#071a29}
+.gallery-section{background:linear-gradient(168deg,#091d2c,#0b2a38)}
+.admission-section{background:radial-gradient(ellipse at 94% 7%,rgba(44,161,150,.2),transparent 46%),#081827}
+.sectiontop .kicker{letter-spacing:1.65px}
+.sectiontop h2{letter-spacing:-1.4px;text-wrap:balance}
+.feature,.strength-highlight,.path-card,.robot-card,.curriculum-content,.ppt-slide,.vcard,.album-card,.photo-card{box-shadow:0 16px 34px rgba(0,10,22,.14)}
+.feature,.strength-highlight,.path-card,.robot-card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.feature:hover,.strength-highlight:hover,.path-card:hover,.robot-card:hover{transform:translateY(-3px);border-color:rgba(126,227,217,.5);box-shadow:0 20px 38px rgba(0,10,22,.22)}
+.feature-icon{background:rgba(93,228,214,.09);border:1px solid rgba(118,234,217,.24);border-radius:12px;padding:5px}
+.path-card{position:relative;overflow:hidden}.path-card:before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#66e5d3,transparent 85%)}
+.ppt-slide img{transition:transform .25s ease}.ppt-slide:hover img{transform:scale(1.015)}
+.gallery-toolbar{flex-wrap:wrap}
+.album-card,.photo-card{transition:transform .22s,border-color .22s}.album-card:hover,.photo-card:hover{transform:translateY(-3px);border-color:#81e8dc}
+.album-cover img,.photo-card img{transition:transform .35s}.album-card:hover img,.photo-card:hover img{transform:scale(1.03)}
+/* New learning overview */
+.practice-section{background:radial-gradient(ellipse at 75% 25%,rgba(20,139,137,.22),transparent 42%),linear-gradient(145deg,#092b37,#061d2e);overflow:hidden}
+.practice-section:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 45px,rgba(161,225,217,.035) 45px 46px),repeating-linear-gradient(90deg,transparent 0 45px,rgba(161,225,217,.035) 45px 46px)}
+.practice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.practice-card{display:flex;flex-direction:column;min-height:280px;padding:25px 21px 20px;border-radius:17px;border:1px solid rgba(153,220,219,.25);background:linear-gradient(145deg,rgba(15,51,66,.96),rgba(7,32,49,.97));box-shadow:0 16px 30px rgba(0,12,25,.15);transition:transform .2s,border-color .2s}
+.practice-card:hover{transform:translateY(-3px);border-color:rgba(130,238,219,.58)}
+.practice-no{font-size:10px;font-weight:800;color:#8be8df;letter-spacing:1.2px}
+.practice-icon{display:grid;place-items:center;margin:17px 0 14px;width:72px;height:72px;border-radius:16px;background:rgba(112,222,218,.1);border:1px solid rgba(133,229,219,.27)}
+.practice-icon svg{width:48px;height:48px;stroke:#9af0e4;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.practice-card h3{margin:0 0 10px;font-size:18px;letter-spacing:-.7px}
+.practice-card p{margin:0 0 14px;color:#c4d7e1;font-size:12px;line-height:1.9;flex:1}
+.practice-key{padding-top:14px;border-top:1px solid rgba(145,219,220,.18);font-size:11px;color:#a4dfd8;font-weight:700}
+.practice-footnote{font-size:11px;color:#a7c6d0;line-height:1.8;margin:16px 0 0}
+/* Interactive career paths (server-independent) */
+.career-explorer{margin:32px 0 24px;padding:25px;border:1px solid rgba(116,220,213,.3);border-radius:22px;background:linear-gradient(135deg,rgba(13,50,64,.98),rgba(7,32,49,.98));box-shadow:0 18px 44px rgba(0,10,22,.22)}
+.career-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
+.career-header h3{font-size:23px;letter-spacing:-1px;margin:8px 0 5px}.career-header p{font-size:12px;line-height:1.7;color:#bdcfdb;margin:0}
+.career-header-badge{white-space:nowrap;background:rgba(121,221,209,.11);border:1px solid rgba(121,221,209,.31);padding:7px 10px;border-radius:999px;color:#95efdf;font-size:11px;font-weight:750}
+.career-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.career-tab{padding:13px 8px;min-height:48px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(196,221,230,.2);color:#d6e9ed;font-size:12px;font-weight:750;transition:background .15s,border-color .15s,color .15s}
+.career-tab:hover,.career-tab:focus-visible{border-color:#8cece0}.career-tab.active,.career-tab[aria-selected="true"]{background:#80e6d6;border-color:#80e6d6;color:#062b36;box-shadow:0 7px 18px rgba(40,188,170,.13)}
+.career-panel{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:20px;align-items:center;padding:23px;background:rgba(2,19,33,.55);border:1px solid rgba(151,217,216,.16);border-radius:14px}
+.career-panel[hidden]{display:none!important}
+.career-index{font-weight:900;letter-spacing:1.3px;font-size:11px;color:#85ecdc}
+.career-panel-head h4{font-size:20px;letter-spacing:-.8px;line-height:1.5;margin:10px 0}.career-panel-head p{font-size:12px;color:#bed5df;line-height:1.9;margin:0}
+.career-steps{display:grid;gap:9px;margin:0;padding:0;list-style:none;counter-reset:career}
+.career-steps li{counter-increment:career;display:grid;grid-template-columns:30px 1fr;column-gap:10px;padding:11px 12px;background:rgba(136,226,222,.055);border:1px solid rgba(150,213,216,.12);border-radius:10px}
+.career-steps li:before{content:counter(career,decimal-leading-zero);grid-row:span 2;font-weight:850;color:#7fe4d7;font-size:12px;margin-top:1px}
+.career-steps b{font-size:12px}.career-steps span{font-size:11px;color:#b5cddb;line-height:1.7;margin-top:3px}
+.career-caution{color:#a9c3d1;font-size:11px;line-height:1.8;margin:13px 3px 0}
+/* FAQ */
+.faq-area{margin-top:48px}
+.faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.faq-item{background:rgba(15,46,64,.9);border:1px solid rgba(136,205,213,.25);border-radius:14px;overflow:hidden;transition:border-color .15s}
+.faq-item[open]{border-color:rgba(132,227,212,.65)}
+.faq-item summary{cursor:pointer;position:relative;list-style:none;padding:19px 48px 19px 20px;font-size:13px;font-weight:750;line-height:1.65;color:#edf7fa}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";font-size:22px;font-weight:400;position:absolute;right:18px;top:50%;transform:translateY(-50%);color:#8ce6dc}
+.faq-item[open] summary:after{content:"−"}
+.faq-item summary:focus-visible{outline:2px solid #8ce6dc;outline-offset:-4px}
+.faq-item p{margin:0;padding:0 20px 20px;font-size:12px;line-height:1.9;color:#bdd7df}
+.faq-item p a{color:#83e7de;text-decoration:underline;text-underline-offset:3px}
+/* Floating mobile utility: no new media dependencies */
+.mobile-quick-actions{display:none}
+@media(max-width:1050px){.practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.practice-card{min-height:245px}}
+@media(max-width:760px){
+  html{scroll-padding-top:116px}
+  body:not(.admin-body){padding-bottom:70px}
+  .section{padding-top:64px;padding-bottom:64px}
+  .hero{min-height:510px}
+  .hero:before{background-size:36px 36px;opacity:.21}
+  .hero:after{width:310px;height:310px;right:-170px;top:140px;box-shadow:0 0 0 40px rgba(117,232,217,.02),0 0 0 100px rgba(117,232,217,.014)}
+  .hero h1{letter-spacing:-1.8px}
+  .hero .intro{font-size:13px;line-height:1.9}
+  .nav-shell{gap:10px}
+  .practice-grid{gap:11px}
+  .practice-card{min-height:227px;padding:18px 15px}
+  .practice-card h3{font-size:15px}.practice-card p{font-size:11px}
+  .practice-icon{width:58px;height:58px;margin:12px 0}.practice-icon svg{width:39px;height:39px}
+  .career-explorer{padding:15px;margin-top:23px;border-radius:16px}
+  .career-header{display:block}
+  .career-header-badge{display:inline-block;margin-top:12px}
+  .career-header h3{font-size:20px}
+  .career-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .career-tab{font-size:11px;min-height:43px;padding:9px 5px}
+  .career-panel{grid-template-columns:1fr;padding:17px;gap:16px}
+  .career-panel-head h4{font-size:18px}
+  .faq-area{margin-top:34px}.faq-grid{grid-template-columns:1fr;gap:10px}
+  .faq-item summary{padding:16px 42px 16px 15px;font-size:12px}.faq-item p{padding:0 15px 17px}
+  .mobile-quick-actions{position:fixed;left:0;right:0;bottom:0;z-index:32;display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:7px;padding:10px max(12px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:rgba(5,22,35,.96);border-top:1px solid rgba(120,231,216,.22);backdrop-filter:blur(15px);box-shadow:0 -10px 30px rgba(0,10,20,.24)}
+  .mobile-quick-actions a{display:flex;align-items:center;justify-content:center;min-height:42px;font-size:11px;font-weight:800;border-radius:9px;border:1px solid rgba(154,216,215,.3);background:rgba(255,255,255,.035);color:#e4eff5}
+  .mobile-quick-actions .mobile-call{background:#80e6d6;color:#082a36;border-color:#80e6d6}
+  .dialog{z-index:50}
+}
+@media(max-width:420px){.practice-grid{grid-template-columns:1fr 1fr}.practice-card{min-height:245px}.practice-card .practice-key{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.practice-card,.career-tab,.feature,.path-card,.album-card,.photo-card{transition:none!important}.hero:after{animation:none}}
+
+/* 방문자 수: 기존 영상/갤러리 CSS 및 코드는 변경하지 않음 */
+.visitor-strip{display:flex;justify-content:flex-end;align-items:center;gap:14px;flex-wrap:wrap;padding-top:19px;padding-bottom:17px;border-bottom:1px solid rgba(167,216,223,.18);font-size:12px;color:#c5d9df}
+.visitor-heading{letter-spacing:.15em;font-size:10px;font-weight:850;color:#89e8db;margin-right:auto}
+.visitor-metric strong{font-size:15px;color:#eafffc;font-variant-numeric:tabular-nums;margin-left:6px}
+.visitor-sep{height:14px;width:1px;background:rgba(167,216,223,.28)}
+.visitor-info{color:#a4bdc5;font-size:10px;flex-basis:100%;text-align:right;min-height:13px}
+@media(max-width:760px){.visitor-strip{justify-content:center;gap:12px;padding:15px 0}.visitor-heading{width:100%;text-align:center;margin-right:0}.visitor-info{text-align:center}.visitor-metric strong{font-size:14px}}
