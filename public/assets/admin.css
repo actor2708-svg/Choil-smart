@@ -3,3 +3,4 @@
 
 /* 구형 안드로이드 브라우저 호환 대체 스타일 */
 @supports not (width:min(1px,2px)){.login-panel{width:100%;max-width:440px}}
+.backup-select{max-width:100%;min-width:0;flex:1 1 220px;background:#061b2c;color:#fff;border:1px solid #426076;border-radius:9px;padding:10px;font-size:12px}.photo-order{font-size:10px;color:var(--cyan);font-weight:700}.photo-controls input[type=date]{color-scheme:dark}.photo-controls .inline-actions+.inline-actions{border-top:1px solid #29495f;padding-top:7px}

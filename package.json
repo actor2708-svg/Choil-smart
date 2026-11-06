@@ -1,0 +1,10 @@
+{
+  "name": "choil-smart-technology",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "조일고등학교 스마트기술과 홈페이지 (정적 페이지 + Netlify Functions/Blobs 관리자 기능)",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  }
+}
