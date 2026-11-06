@@ -105,6 +105,25 @@ html{scroll-padding-top:96px}body{background:#061623}
   .career-tab{font-size:11px;min-height:43px;padding:9px 5px}
   .career-panel{grid-template-columns:1fr;padding:17px;gap:16px}
   .career-panel-head h4{font-size:18px}
+  /* Mobile readability: high-contrast career explorer (WCAG AA) */
+  .career-explorer{background:#f4f8f9;border-color:#c5dcdc;box-shadow:0 14px 34px rgba(0,10,22,.2)}
+  .career-header .kicker{color:#0a6e66;font-size:12px}
+  .career-header h3{color:#1e2a30}
+  .career-header p{color:#3a4950;font-size:14px;line-height:1.75}
+  .career-header-badge{background:#e2f6f2;border-color:#7fcfc4;color:#0a5e57;font-size:13px}
+  .career-tab{font-size:14px;min-height:46px;background:#fff;border-color:#c4d3d8;color:#34434b}
+  .career-tab:hover,.career-tab:focus-visible{border-color:#1e9e90;color:#34434b}
+  .career-tab.active,.career-tab[aria-selected="true"]{background:#80e6d6;border-color:#80e6d6;color:#062b36}
+  .career-tab:focus-visible{outline:2px solid #0a6e66;outline-offset:2px}
+  .career-panel{background:#58676f;border-color:#58676f}
+  .career-index{color:#b5f5ea;font-size:12px}
+  .career-panel-head h4{color:#fff}
+  .career-panel-head p{color:#eef3f5;font-size:14px;line-height:1.8}
+  .career-steps li{background:#4a5960;border-color:rgba(255,255,255,.14)}
+  .career-steps li:before{color:#b5f5ea;font-size:14px}
+  .career-steps b{color:#fff;font-size:15px}
+  .career-steps span{color:#eef3f5;font-size:14px;line-height:1.65}
+  .career-caution{color:#3a4950;font-size:14px;line-height:1.75}
   .faq-area{margin-top:34px}.faq-grid{grid-template-columns:1fr;gap:10px}
   .faq-item summary{padding:16px 42px 16px 15px;font-size:12px}.faq-item p{padding:0 15px 17px}
   .mobile-quick-actions{position:fixed;left:0;right:0;bottom:0;z-index:32;display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:7px;padding:10px max(12px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:rgba(5,22,35,.96);border-top:1px solid rgba(120,231,216,.22);backdrop-filter:blur(15px);box-shadow:0 -10px 30px rgba(0,10,20,.24)}
