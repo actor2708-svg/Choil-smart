@@ -6,9 +6,10 @@ import { getStore } from '@netlify/blobs';
 //  - joil-backups       : 콘텐츠를 저장할 때마다 바로 이전 상태 자동 백업
 //  - joil-media-trash   : 삭제한 사진 원본 보관 (삭제 전에 복사)
 //  - joil-auth          : 로그인 실패 횟수 (무차별 대입 방지)
+//  - joil-qna           : 학과 Q&A 질문·답변 (키: q/<시각>-<UUID>), 작성 빈도 제한 기록 (키: rate/<해시>)
 // 운영(production) 이외의 배포(Deploy Preview, 브랜치 배포, 로컬 개발)는 "test-" 접두어가 붙은
 // 별도 저장소를 사용하므로 테스트가 운영 데이터를 절대 건드리지 않습니다.
-export const STORE_NAMES = ['content', 'media', 'backups', 'media-trash', 'auth'];
+export const STORE_NAMES = ['content', 'media', 'backups', 'media-trash', 'auth', 'qna'];
 
 export function isProduction(context) {
   return context?.deploy?.context === 'production';

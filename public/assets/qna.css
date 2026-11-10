@@ -1,0 +1,20 @@
+/* 학과 Q&A (기존 디자인 변수·색상 재사용) */
+.qna-section{background:#091a2b}
+.qna-form{display:grid;gap:8px;background:linear-gradient(160deg,#0e2b40,#0b1e30);border:1px solid #2b4b60;border-radius:18px;padding:24px;margin-bottom:26px}
+.qna-form label{font-size:12px;font-weight:700;color:#d5e5ed;margin-top:6px}
+.qna-form input,.qna-form textarea{width:100%;border:1px solid #426076;border-radius:9px;background:#061b2c;color:#fff;padding:12px;font-size:13px;resize:vertical;outline:none;line-height:1.7}
+.qna-form input:focus,.qna-form textarea:focus{border-color:var(--cyan)}
+.qna-hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.qna-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px}
+.qna-actions button{border:0}.qna-actions button:disabled{opacity:.55;cursor:not-allowed}
+.qna-status{font-size:12px;color:var(--cyan);line-height:1.7}.qna-status.error{color:#ffcd76}
+.qna-list{display:grid;gap:12px}
+.qna-item{background:#0e2438;border:1px solid #2b4b60;border-radius:14px}
+.qna-item summary{cursor:pointer;padding:17px 20px;font-size:14px;font-weight:800;display:flex;justify-content:space-between;gap:12px}
+.qna-item summary small{color:var(--muted);font-weight:400;font-size:11px;white-space:nowrap}
+.qna-q,.qna-a{margin:0;padding:0 20px 16px;font-size:13px;line-height:1.9;color:#c6d7e2;white-space:pre-line;overflow-wrap:anywhere}
+.qna-a{margin:0 20px 18px;padding:14px 16px;border-left:3px solid var(--cyan);background:#0b3440;border-radius:8px}
+.qna-a b{display:block;color:var(--cyan);font-size:11px;letter-spacing:1px;margin-bottom:4px}
+.qna-a.waiting{border-color:#45677c;background:#0a2336;color:var(--muted)}
+.qna-empty{font-size:13px;color:var(--muted);text-align:center;padding:24px;border:1px dashed #42647b;border-radius:14px;margin:0}
+@media(max-width:760px){.nav-links{overflow-x:auto;scrollbar-width:none}.qna-form{padding:18px}.qna-item summary{flex-direction:column;gap:4px}}

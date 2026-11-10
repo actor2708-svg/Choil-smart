@@ -20,7 +20,7 @@
         <span class="brand-mark"><img src="assets/icons/choil-mark.png" alt="" width="40" height="40"></span><span class="brand-title"><b>조일고등학교</b><small>SMART TECHNOLOGY</small></span>
       </a>
       <nav class="nav-links" aria-label="주 메뉴">
-        <a href="#about">학과소개</a><a href="#curriculum">교육과정</a><a href="#future">미래기술</a><a href="#pathways">진로·로드맵</a><a href="#ppt-materials">PPT자료</a><a href="#videos">홍보영상</a><a href="#gallery">활동사진</a><a href="#admission">입학안내</a>
+        <a href="#about">학과소개</a><a href="#curriculum">교육과정</a><a href="#future">미래기술</a><a href="#pathways">진로·로드맵</a><a href="#ppt-materials">PPT자료</a><a href="#videos">홍보영상</a><a href="#gallery">활동사진</a><a href="#admission">입학안내</a><a href="#qna">학과 Q&amp;A</a>
       </nav>
       <a class="nav-admin" href="admin.html" aria-label="관리자 페이지">관리자 <span aria-hidden="true">↗</span></a>
     </div>
@@ -159,6 +159,18 @@
         <div id="gallery-content" aria-live="polite"></div>
       </div>
     </section>
+    <section class="section qna-section" id="qna">
+      <div class="container">
+        <div class="sectiontop"><div><span class="kicker">ASK US ANYTHING</span><h2>학과 Q&amp;A</h2></div><p class="sub">로그인 없이 익명으로 질문할 수 있습니다.<br>등록된 질문은 관리자 확인 후 답변과 함께 공개됩니다.</p></div>
+        <form id="qna-form" class="qna-form" novalidate>
+          <label for="qna-title">제목</label><input id="qna-title" name="title" maxlength="80" required placeholder="질문 제목 (2~80자)">
+          <label for="qna-body">질문 내용</label><textarea id="qna-body" name="body" rows="4" maxlength="2000" required placeholder="궁금한 내용을 적어 주세요. 이름·전화번호 등 개인정보는 적지 마세요. (5~2000자)"></textarea>
+          <div class="qna-hp" aria-hidden="true"><label>웹사이트<input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="qna-actions"><button type="submit" class="primary-button" id="qna-submit">질문 등록</button><span id="qna-status" class="qna-status" role="status" aria-live="polite"></span></div>
+        </form>
+        <div id="qna-list" class="qna-list" aria-live="polite"><p class="qna-empty">질문을 불러오는 중입니다.</p></div>
+      </div>
+    </section>
     <section class="section admission-section" id="admission">
       <div class="container">
         <div class="admission-panel">
@@ -188,5 +200,7 @@
   <script src="assets/site.js?v=20261106career1" defer></script>
   <script src="assets/refresh.js?v=20261106r2" defer></script>
   <script src="assets/visitors.js?v=20261106v1" defer></script>
+  <link rel="stylesheet" href="assets/qna.css?v=20261110q1">
+  <script src="assets/qna.js?v=20261110q1" defer></script>
 </body>
 </html>
